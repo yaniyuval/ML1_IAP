@@ -66,6 +66,11 @@ To activate the environment (you should do this always before opening the course
 ```
 conda activate ML_IAP
 ```
+in older environments you might need to type:
+```
+source activate ML_IAP
+```
+in order to activate the virtual environment (though if you installed the new anaconda, you won't need it). 
 
 If you want to understand what is a virtual environmnet please read [here](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/).
 
@@ -82,14 +87,6 @@ also type the following commands:
 conda install jupyter notebook
 ```
 
-```
-pip install category_encoders
-```
-If you have any problems with category_encoders package, try typing:
-```
-conda install -c conda-forge category_encoders
-```
-
 Continue by typing
 ```
 pip install xgboost
@@ -98,6 +95,15 @@ pip install xgboost
 ```
 pip install pandas_summary
 ```
+
+```
+pip install category_encoders
+```
+If you have any problems with category_encoders package, try typing:
+```
+conda install -c conda-forge category_encoders
+```
+
 
 ### Installing pytorch
 pytorch is the package we will use for deep learning. The specific line of code you will run in order to get pytorch, depends on your OS and your python version. 
