@@ -1,19 +1,19 @@
 
 
 # Hands on Python Machine Learning - IAP at MIT 
-In this short IAP I will try to cover few algorithms and concepts that are used repeatedly in practical supervised learning.  I hope that taking this IAP will allow you to easily use basic ML, and in case you want to deepen your understanding, your knowledge you will hopefully gain in this IAP will facilitate your future learning.
+In this short IAP I will try to cover few algorithms and concepts that are used repeatedly in practical supervised learning.  I hope that taking this IAP will encourage you to use machine learning (ML) in your research, and will make it easy to read ML (practical) litrature.
 
 Machine learning is a very broad field and naturally I will not be able to cover many aspects/topics/practices of ML. 
 But the good news is that in practice there are two main techniques that are the most successful ones when applied to many different data sets:
  
 - Decision tree based models (i.e. Random Forests and Gradient Boosting Machines), succesful mainly for structured data (tabular data)
-- Neural networks, succesful mainly for unstructured data (such as audio, vision, and natural language), although recently also becoming popular in tabular data (see [fastai courses](https://course.fast.ai/)). 
+- Neural networks, succesful mainly for unstructured data (such as audio, vision, and natural language), although recently also becoming popular in tabular data (see [fastai courses](https://course.fast.ai/), which I have used repeatedly while preparing this course). 
 
-Most of other algorithms (that gained popularity at some point during their lifetime), are outdated and are not very useful in most cases. 
+Most of other ML algorithms (that gained popularity at some point during their lifetime), are outdated and are not very useful in most cases. 
 
-In this course I will not invest a lot of time on rigorous derivations, proofs, lemma and etc... I hope that instead we will use our time to gain some intuition how ML models work and make our hands ''dirty'' with coding. This is very different from a typical academic course, which are usually very rigorous and invest their time explaining in details every aspect of the material. In the book Making Learning Whole, Harvard Professor David Perkins,  uses baseball as an analogy. We don't require kids to memorize all the rules of baseball and understand all the technical details before we let them play the game. Rather, they start playing with a just general sense of it, and then gradually learn more rules/details as time goes on. 
+In this course I will not invest a lot of time on rigorous derivations, proofs and etc. Instead we will use our time to gain some intuition how ML models work and make our hands ''dirty'' with coding. This is very different from a typical academic courses, which are usually very rigorous and invest their time explaining in details every aspect of the material. 
 
-Every session will be devided to a teaching session (that will be done with jupyter notebooks - lesson*.ipynb) and a practice session where you will try code things that we learn (basically using machine learning to get predictions for some data set).  
+Every session will be devided to a teaching session (that will be given with jupyter notebooks - lesson*.ipynb) and a practice session where you will try code things that we learn (basically using machine learning to get predictions for some data set).  
 
 The main topics of the sessions are:
 - Classification with Random Forest
@@ -67,6 +67,10 @@ To activate the environment (you should do this always before opening the course
 conda activate ML_IAP
 ```
 
+If you want to understand what is a virtual environmnet please read [here](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/).
+
+If you want more details regarding creating virtual environments, please read [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
 #### Installing packages
 Here you will install packages that are necessary for the course. Please type:
 
@@ -94,10 +98,6 @@ pip install xgboost
 ```
 pip install pandas_summary
 ```
-If you want to understand what is a virtual environmnet please read [here](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/).
-
-If you want more details regarding creating virtual environments, please read [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-
 
 ### Installing pytorch
 pytorch is the package we will use for deep learning. The specific line of code you will run in order to get pytorch, depends on your OS and your python version. 
@@ -107,10 +107,10 @@ I installed a version without a GPU (choosing CUDA none) and needed to type:
 ```
 conda install pytorch torchvision -c pytorch
 ```
-But this is only on my machine.
+But this line of code is proper to my mac and you might need to write something else.
 Note that even if you do have a GPU (which is great!) I will not teach anything that requires it, and all the code was written to run on a CPU.
 
-Since there is a new release of pytorch which has some problems (which should be solved in a couple of days), I recommend you to type:
+Since there was a recent  new release of pytorch which still has a  small issue (which should be solved in a couple of days), I recommend you to type:
 ```
 pip install "pillow<7"
 ```
@@ -142,13 +142,15 @@ to test that your installation of all packages has worked you can run that you c
 
 If you get some error, please try to understand which package you did not install properly and try to reinstall it. 
 
+## Warning
+The notebooks might still have some small changes, so please clone the repository again before each session
+
 ## Recommended reading
 
-There are numerous data sources to learn ML. During this course I tried to put links to sources that I took content from, and that I find useful. Two amazing sources of knowledge, that I repeatedly use during the IAP are:
+There are numerous data sources to learn ML. During this course I tried to put links to sources that I took content from, and that I find useful. Three amazing sources of knowledge, that I repeatedly use during the IAP are:
 
 - Python Machine Learning ([book by Sebastian Rascha](https://sebastianraschka.com)). Go to this book when you want to learn about basic concepts of ML.
 - Fast.ai courses ([1](https://course.fast.ai/), [2](https://course18.fast.ai/lessonsml1/lesson1.html)) given by Jeremy Howard which is a world-class ML practitioner. Take these course if you want the newest and best ML techniques available. Also see initial version of the [book](https://mlbook.explained.ai/) Jeremy Howard is writing.
-
-If you are interested in a basic soft intro to ML - Andrew Ng [course](https://www.coursera.org/learn/machine-learning) at coursera is a good starting point.
+- If you are interested in a basic soft intro to ML - Andrew Ng [course](https://www.coursera.org/learn/machine-learning) at coursera is a good starting point. The course uses matlab (Ahhh) and a bit outdated but Andrew Ng is a great lecturer and the course is great.
 
 #### Please let me know if you have problems: yaniyuval@gmail.com
