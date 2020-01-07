@@ -1,16 +1,132 @@
 
 
 # Hands on Python Machine Learning - IAP at MIT 
+This IAP is aimed to give you practical machine learning skills. Every session will be devided to 
+
+The titles of the sessions are:
+- Classification with Random Forest
+- Regression with Random forest and XGBoost
+- Fully connected Neural Networks (using pytorch)
+- Convolutional Neural Networks
+
+If we will successfully finish on time the first four sessions,  the fifth session will deal with transfer learning (or we will complete topics from the first four sessions). 
+
+## Getting Started
 The easisest option to get the course material is clonining this git repository.
 To do so type git clone
-In order to get all the material for the course I suggest cloning this git repository. To do so type git clone https://github.com/yaniyuval/ML_IAP.git. Alternatively, you can download a zip file.
+In order to get all the material for the course I suggest cloning this git repository. To do so type:
+```
+git clone https://github.com/yaniyuval/ML_IAP.git
+``` 
+
+Alternatively, you can download a zip file.
 
 
-All through the IAP, we will use Jupyter notebooks. If you are not familiar with Jupyter notebooks, please go over some basic tutorial (e.g., https://realpython.com/jupyter-notebook-introduction/) to be able to run it and run code on the notebook. I also added to the repository a tutorial notebook (taken from [Stephan's Rasp repository](https://github.com/raspstephan/MPI-ML-Tutorial/blob/master/jupyter-intro.ipynb)  If you have difficulties, please contact me. I also recommend havinng a look on the [fastai notebook tutorial](https://github.com/fastai/course-v3/blob/master/nbs/dl1/00_notebook_tutorial.ipynb).  
+### Prerequisites
+### Installing
+#### Installing anaconda:
+follow the instructions [here](https://docs.anaconda.com/anaconda/install/), where the installation dependes on the OS you have. 
 
-If you are not so familiar with Python and Python packages, I highly recommend using the Anaconda package manager. Simply go to the website and download the Anaconda version for your OS and follow the installation instructions. Then install the packages we will need for this tutorial:
+please update your conda version before continuing with the instructions by typing (if you do not want to update all your packages - please read [here](https://www.anaconda.com/keeping-anaconda-date/) about other options).  
 
-conda install numpy matplotlib jupyter scikit-learn keras
-Then go into this directory on your machine and type jupyter notebook. A window should appear in your browser. From there click on the demo.ipynb notebook and try to execute all cells. To execute a cell simply click the play button or type shift + Enter.
+```
+conda update --all
+```
 
-Please let me know if you have problems: yaniyuval@gmail.com
+
+#### Updating python version
+I am using Python 3.7.5, and I encourage you to update your python version to be at least 3.6.
+You can do this using anaconda:
+'''
+conda update python
+'''
+
+#### Virtual enviormenti
+To crrate a new virtual environment calledd ML_IAP with anaconda type:
+
+```
+conda create --name ML_IAP python=3.7.5
+```
+If you want to use a different python version you can change the python version but take into account that there might be some problems with different versions.  
+
+To activate the environment (you should do this always before opening the course notebooks or when installin packages):
+```
+conda activate ML_IAP
+```
+
+#### Installing packages
+Here you will install packages that are necesary for the course. Please type:
+
+```
+conda install scikit-learn numpy matplotlib scipy IPython pandas
+```
+also type the following commands:
+```
+conda install jupyter notebook
+```
+
+```
+pip install category_encoders
+```
+If you have any problems with category_encoders package, try typing:
+```
+conda install -c conda-forge category_encoders
+```
+
+```
+pip install xgboost
+```
+
+```
+pip install pandas_summary
+```
+If you want to understand what is a virtual environmnet please read [here](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/).
+
+If you want more details regarding creating virtual environments, please read [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
+
+### Installing pytorch
+pytorch is tha package we will use for deep learning. The specific version of pytorch depends on your OS and your python version. 
+In order to understand what should you type, please go [here](https://pytorch.org/get-started/locally/) and choose your OS/versions. 
+I installed a version without a GPU (choosing CUDA none) and needed to type:
+
+```
+conda install pytorch torchvision -c pytorch
+```
+But this is only on my machine
+
+Since there is a new release of pytorch which has some problems, I recommend you to type:
+```
+pip install "pillow<7"
+```
+Although this might be solved in the next few days - see [here](https://github.com/pytorch/vision/issues/1712)
+
+#### Installing fastai
+type
+```
+ pip install fastai
+```
+if you have problems - please read [here](https://docs.fast.ai/install.html)
+
+
+
+
+#### Runinng Jupyter notebook
+Go to the IAP library (where you cloned the course repository) and type (don't forget to first activate your ML_IAP virtual environment):
+Now choose a notebook that you want to run.
+
+if for some reason you do not succeed running jupyter notebook please install manually (most likely you won't need this step):
+```
+conda install jupyter notebook
+```
+and now try again to type 
+```
+jupyter notebook
+```
+ 
+#### Comment - Jupyter Notebooks
+All through the IAP, we will use Jupyter notebooks. If you are not familiar with Jupyter notebooks, please go over some basic tutorial (e.g., [fastai tutorial notebook](https://github.com/fastai/course-v3/blob/master/nbs/dl1/00_notebook_tutorial.ipynb), [general introduction to jupyter notebooks](https://realpython.com/jupyter-notebook-introduction/))  and make sure you are able to run code on notebooks. I also added to the repository a tutorial notebook (taken from [Stephan's Rasp repository](https://github.com/raspstephan/MPI-ML-Tutorial/blob/master/jupyter-intro.ipynb).
+
+
+
+#### Please let me know if you have problems: yaniyuval@gmail.com
