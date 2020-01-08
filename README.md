@@ -6,8 +6,8 @@ In this short IAP I will try to cover few algorithms and concepts that are used 
 Machine learning is a very broad field and naturally I will not be able to cover many aspects/topics/practices of ML. 
 But the good news is that in practice there are two main techniques that are the most successful ones when applied to many different data sets:
  
-- Decision tree based models (i.e. Random Forests and Gradient Boosting Machines), succesful mainly for structured data (tabular data)
-- Neural networks, succesful mainly for unstructured data (such as audio, vision, and natural language), although recently also becoming popular in tabular data (see [fastai courses](https://course.fast.ai/), which I have used repeatedly while preparing this course). 
+- Decision tree based models (i.e. Random Forests and Gradient Boosting Machines), successful mainly for structured data (tabular data)
+- Neural networks, successful mainly for unstructured data (such as audio, vision, and natural language), although recently also becoming popular in tabular data (see [fastai courses](https://course.fast.ai/), which I have used repeatedly while preparing this course). 
 
 Most of other ML algorithms (that gained popularity at some point during their lifetime), are outdated and are not very useful in most cases. 
 
@@ -132,7 +132,7 @@ if you have problems in installing fastai - please read [here](https://docs.fast
 
 
 
-#### Runinng Jupyter notebook
+#### Running Jupyter notebook
 Go to the IAP library (where you cloned the course repository) and type (don't forget to first activate your ML_IAP virtual environment):
 ```
 jupyter notebook
@@ -156,7 +156,7 @@ The notebooks might still have some small changes, so please clone the repositor
 There are numerous data sources to learn ML. During this course I tried to put links to sources that I took content from, and that I find useful. Three amazing sources of knowledge, that I repeatedly use during the IAP are:
 
 - Python Machine Learning ([book by Sebastian Rascha](https://sebastianraschka.com)). Go to this book when you want to learn about basic concepts of ML.
-- Fast.ai courses ([1](https://course.fast.ai/), [2](https://course18.fast.ai/lessonsml1/lesson1.html)) given by Jeremy Howard which is a world-class ML practitioner. Take these course if you want the newest and best ML techniques available. Also see initial version of the [book](https://mlbook.explained.ai/) Jeremy Howard is writing.
+- Fast.ai courses ([1](https://course.fast.ai/), [2](https://course18.fast.ai/lessonsml1/lesson1.html)) given by Jeremy Howard which is a world-class ML practitioner. Take these courses if you want the newest and best ML techniques available. Also see initial version of the [book](https://mlbook.explained.ai/) Jeremy Howard is writing.
 - If you are interested in a basic soft intro to ML - Andrew Ng [course](https://www.coursera.org/learn/machine-learning) at coursera is a good starting point. The course uses matlab (Ahhh) and a bit outdated but Andrew Ng is a great lecturer and the course is great.
 
 #### Please let me know if you have problems: yaniyuval@gmail.com
