@@ -1,6 +1,6 @@
 
 
-# Hands on Python Machine Learning - IAP at MIT 
+# Hands-On Python Machine Learning - IAP at MIT 
 In this short IAP I will try to cover few algorithms and concepts that are used repeatedly in practical supervised learning.  I hope that taking this IAP will encourage you to use machine learning (ML) in your research, and will make it easy to read ML (practical) litrature.
 
 Machine learning is a very broad field and naturally I will not be able to cover many aspects/topics/practices of ML. 
