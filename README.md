@@ -20,8 +20,7 @@ The main topics of the sessions are:
 - Regression with Random forest and XGBoost
 - Fully connected Neural Networks (using pytorch)
 - Convolutional Neural Networks
-
-If we will successfully finish on time the first four sessions,  the fifth session will deal with transfer learning (or we will complete topics from the first four sessions). 
+- Transfer Learning (using fastai)
 
 ## Getting Started
 The easiest option to get the course material is cloning this git repository.
