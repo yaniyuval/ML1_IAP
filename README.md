@@ -1,10 +1,10 @@
 
 
 # Hands-On Python Machine Learning - IAP at MIT 
-In this short IAP I will try to cover few algorithms and concepts that are used repeatedly in practical supervised learning.  I hope that taking this IAP will encourage you to use machine learning (ML) in your research, and will make it easy to read ML (practical) litrature.
+In this short IAP I will teach concepts and algorithms that are used repeatedly in practical supervised learning.  I hope that taking this IAP will encourage you to use machine learning (ML) in your research, and will facilitate reading ML litrature.
 
-Machine learning is a very broad field and naturally I will not be able to cover many aspects/topics/practices of ML. 
-But the good news is that in practice there are two main techniques that are the most successful ones when applied to many different data sets:
+Machine learning is a very broad field and naturally I will not be able to cover all aspects/topics/practices of ML. 
+But the good news is that learning only two main algorithms can be sufficient for almost all practical purposes of supervised ML.
  
 - Decision tree based models (i.e. Random Forests and Gradient Boosting Machines), successful mainly for structured data (tabular data)
 - Neural networks, successful mainly for unstructured data (such as audio, vision, and natural language), although recently also becoming popular in tabular data (see [fastai courses](https://course.fast.ai/), which I have used repeatedly while preparing this course). 
